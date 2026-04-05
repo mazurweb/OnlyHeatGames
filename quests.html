@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quest Path — RS3 Guide Hub</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-brand"><span class="flame">🔥</span>OnlyHeat Games<span class="sep">|</span><span class="sub">RS3 Guide Hub</span></div>
+  <div class="nav-links">
+    <a class="nav-link" href="index.html">Home</a>
+    <a class="nav-link" href="quests.html">Quests</a>
+    <a class="nav-link" href="combat.html">Combat</a>
+    <a class="nav-link" href="skills.html">Skills</a>
+    <a class="nav-link" href="completionist.html">Completionist</a>
+  </div>
+</nav>
+
+<div class="page-shell">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sb-label">Level Brackets</div>
+    <button class="sb-btn active" data-sec="s-starter"><span>🟢</span> Starter (No Reqs)</button>
+    <button class="sb-btn" data-sec="s-early"><span>🟡</span> Early (Lv 10–30)</button>
+    <button class="sb-btn" data-sec="s-mid"><span>🟠</span> Mid (Lv 30–60)</button>
+    <button class="sb-btn" data-sec="s-late"><span>🔴</span> Late (Lv 60–80)</button>
+    <button class="sb-btn" data-sec="s-end"><span>💀</span> Endgame (80+)</button>
+    <div class="sb-label">Tools</div>
+    <button class="sb-btn" data-sec="s-chains"><span>🔗</span> Quest Chains</button>
+    <button class="sb-btn" data-sec="s-xp"><span>⚡</span> Best XP Quests</button>
+  </aside>
+
+  <!-- Content -->
+  <div class="page-content">
+
+    <h1 style="margin-bottom:4px;">Quest Path by Level</h1>
+    <p>Organized by when you can and should complete each quest. Tick quests as you complete them — progress saves automatically.</p>
+
+    <!-- Progress bar -->
+    <div class="prog-wrap" data-ns="quest" style="margin-top:12px;">
+      <div class="prog-meta"><span class="prog-label">Overall Quest Progress</span><span class="prog-val">0 / 63</span></div>
+      <div class="prog-bar"><div class="prog-fill" style="width:0%"></div></div>
+    </div>
+
+    <!-- Filter bar -->
+    <div class="filter-bar" id="qfilter">
+      <button class="fbtn on" data-filter="all">All</button>
+      <button class="fbtn" data-filter="f2p">F2P Only</button>
+      <button class="fbtn" data-filter="members">Members</button>
+      <button class="fbtn" data-filter="none">No Requirements</button>
+      <button class="fbtn" data-filter="combat">Combat XP</button>
+      <button class="fbtn" data-filter="skill-unlock">Skill Unlock</button>
+      <button class="fbtn" data-filter="area-unlock">Area Unlock</button>
+    </div>
+
+    <!-- ── STARTER ── -->
+    <div id="s-starter" class="content-section active">
+      <h2>🟢 Starter Quests — No Requirements</h2>
+      <div class="info-box"><strong>📍 Start Here:</strong> All of these can be done immediately after arriving in Lumbridge. Zero skill or quest requirements. Do every single one before worrying about combat leveling.</div>
+      <div id="qtable-starter"></div>
+    </div>
+
+    <!-- ── EARLY ── -->
+    <div id="s-early" class="content-section">
+      <h2>🟡 Early Game — Combat Level 10–30</h2>
+      <div class="info-box"><strong>💡 Goal:</strong> Unlock Summoning, Herblore, and Thieving. These three skills are gated behind intro quests. Do these before grinding your combat stats higher.</div>
+      <div id="qtable-early"></div>
+    </div>
+
+    <!-- ── MID ── -->
+    <div id="s-mid" class="content-section">
+      <h2>🟠 Mid Game — Combat Level 30–60</h2>
+      <div class="info-box"><strong>🎯 Goal:</strong> Dragon Slayer unlocks Rune armour — the biggest gear milestone before membership kicks in. Waterfall Quest gives enormous Melee XP for free. Do these before you outgrow the content.</div>
+      <div id="qtable-mid"></div>
+    </div>
+
+    <!-- ── LATE ── -->
+    <div id="s-late" class="content-section">
+      <h2>🔴 Late Game — Combat Level 60–80</h2>
+      <div class="info-box blue"><strong>⚠️ Members Required:</strong> Almost all late-game quests require membership. If you haven't subscribed yet, this is when it becomes essential. Desert Treasure and the Plague City chain are the two biggest unlocks here.</div>
+      <div id="qtable-late"></div>
+    </div>
+
+    <!-- ── ENDGAME ── -->
+    <div id="s-end" class="content-section">
+      <h2>💀 Endgame Quests — Combat Level 80+</h2>
+      <div class="info-box red"><strong>🏆 The World Wakes</strong> is the most important quest in this tier — 450,000 XP in free lamps, 110k Slayer XP, 250k Prayer XP, and it unlocks the Sunshine (Magic) and Death's Swiftness (Ranged) ultimates. Work toward this as your primary endgame quest goal.</div>
+      <div id="qtable-end"></div>
+    </div>
+
+    <!-- ── CHAINS ── -->
+    <div id="s-chains" class="content-section">
+      <h2>🔗 Important Quest Chains</h2>
+      <p>These quest series must be completed in order. Each chain unlocks major areas or endgame content.</p>
+
+      <div class="card gold">
+        <div class="card-title">🧝 Elf Quest Chain → Prifddinas</div>
+        <div class="card-body">
+          <p>One of the longest and most rewarding quest series. Prifddinas is the best skilling and content hub in the game — worth every step.</p>
+          <div class="tbl" style="margin-top:10px;">
+            <table style="width:100%">
+              <thead><tr><th>#</th><th>Quest</th><th>Key Requirement</th><th>Reward</th></tr></thead>
+              <tbody>
+                <tr><td class="td-g">1</td><td>Plague City</td><td>No reqs</td><td>Ardougne access</td></tr>
+                <tr><td class="td-g">2</td><td>Biohazard</td><td>Plague City</td><td>More Ardougne</td></tr>
+                <tr><td class="td-g">3</td><td>Underground Pass</td><td>Biohazard, 25 Agility</td><td>West Ardougne</td></tr>
+                <tr><td class="td-g">4</td><td>Regicide</td><td>Underground Pass, 56 Agility</td><td>Tirannwn access</td></tr>
+                <tr><td class="td-g">5</td><td>Roving Elves</td><td>Regicide, 56 Agility</td><td>Elf lore</td></tr>
+                <tr><td class="td-g">6</td><td>Mourning's End Pt 1</td><td>Roving Elves, 60 Ranged, 50 Thieving</td><td>Mourner tunnels</td></tr>
+                <tr><td class="td-g">7</td><td>Mourning's End Pt 2</td><td>MEnd Pt 1</td><td>Death altar</td></tr>
+                <tr><td class="td-g">8</td><td>Within the Light</td><td>MEnd Pt 2, 69 Agility</td><td>Death altar shortcut</td></tr>
+                <tr><td class="td-g">9</td><td>Song of the Elves</td><td>Many 70+ stat reqs</td><td>🏙️ Prifddinas unlock</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="card purple">
+        <div class="card-title">💀 Necromancy Quest Chain → City of Um</div>
+        <div class="card-body">
+          <p>The Kili Row series is your gear progression guide if playing Necromancy. Each quest directly upgrades your Death Guard weapon.</p>
+          <div class="tbl" style="margin-top:10px;">
+            <table style="width:100%">
+              <thead><tr><th>#</th><th>Quest</th><th>Necromancy Level</th><th>Reward</th></tr></thead>
+              <tbody>
+                <tr><td class="td-p">1</td><td>Necromancy! (F2P)</td><td>None</td><td>Skill unlock, Death Guard T10</td></tr>
+                <tr><td class="td-p">2</td><td>Soul Searching</td><td>10</td><td>Lore + XP</td></tr>
+                <tr><td class="td-p">3</td><td>Kili Row</td><td>20</td><td>Death Guard T20</td></tr>
+                <tr><td class="td-p">4</td><td>Kili's Craft</td><td>30</td><td>Death Guard T30</td></tr>
+                <tr><td class="td-p">5</td><td>Rune Mythos</td><td>40</td><td>Rune access expanded</td></tr>
+                <tr><td class="td-p">6</td><td>City of Um (full series)</td><td>60+</td><td>City of Um unlock, T70+ gear</td></tr>
+                <tr><td class="td-p">7</td><td>Vessel of the Harbinger</td><td>80+</td><td>Rasial boss + BiS gear chain</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="card blue">
+        <div class="card-title">🧟 Morytania / Vampyre Chain → Barrows</div>
+        <div class="card-body">
+          <p>Unlocks the Barrows, Darkmeyer, and the Blisterwood weapons — top-tier slayer content.</p>
+          <div class="tbl" style="margin-top:10px;">
+            <table style="width:100%">
+              <thead><tr><th>#</th><th>Quest</th><th>Requirement</th><th>Reward</th></tr></thead>
+              <tbody>
+                <tr><td class="td-b">1</td><td>Priest in Peril</td><td>Combat ~50</td><td>Morytania access</td></tr>
+                <tr><td class="td-b">2</td><td>Nature Spirit</td><td>Priest in Peril, 18 Crafting</td><td>Guthix prayer</td></tr>
+                <tr><td class="td-b">3</td><td>Haunted Mine</td><td>35 Crafting, combat ~50</td><td>Salve amulet</td></tr>
+                <tr><td class="td-b">4</td><td>In Search of the Myreque</td><td>Various</td><td>Myreque start</td></tr>
+                <tr><td class="td-b">5</td><td>In Aid of the Myreque</td><td>Various, 25 Crafting</td><td>Barrows access</td></tr>
+                <tr><td class="td-b">6</td><td>Darkness of Hallowvale</td><td>Many reqs, 32 Construction</td><td>Darkmeyer lore</td></tr>
+                <tr><td class="td-b">7</td><td>Legacy of Seergaze</td><td>52 Fletching, combat</td><td>Ivandis flail</td></tr>
+                <tr><td class="td-b">8</td><td>The Branches of Darkmeyer</td><td>63 Farming, combat</td><td>Darkmeyer full access</td></tr>
+                <tr><td class="td-b">9</td><td>River of Blood</td><td>Many 75+ reqs</td><td>Blisterwood weapons</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="card green">
+        <div class="card-title">🦁 Dorgeshuun Chain → Dorgesh-Kaan</div>
+        <div class="card-body">
+          <p>Unlocks Dorgesh-Kaan underground city — useful Agility training and unique cave content.</p>
+          <ul class="step-list" style="margin-top:8px;">
+            <li><strong>The Lost Tribe</strong> (13 Agility/Thieving/Mining) — hole in Lumbridge Castle</li>
+            <li><strong>Death to the Dorgeshuun</strong> (23 Thieving/Agility) — H.A.M. hideout</li>
+            <li><strong>Another Slice of H.A.M.</strong> (15 Attack/Strength) — Dorgeshuun railway</li>
+            <li><strong>Land of the Goblins</strong> (36 Agility, 36 Prayer) — goblin caves</li>
+            <li><strong>The Chosen Commander</strong> (many reqs) — Zanik storyline conclusion</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card orange">
+        <div class="card-title">🌴 Fremennik Chain → Lunar Isle &amp; Neitiznot</div>
+        <div class="card-body">
+          <ul class="step-list" style="margin-top:8px;">
+            <li><strong>The Fremennik Trials</strong> (no hard reqs) — Rellekka access</li>
+            <li><strong>The Fremennik Isles</strong> (20 Construction, 40 Agility) — Neitiznot helm</li>
+            <li><strong>Lunar Diplomacy</strong> (61 Crafting, 65 Magic, more) — Lunar spellbook</li>
+            <li><strong>Dream Mentor</strong> (many reqs) — Lunar spells expanded</li>
+            <li><strong>Fremennik Exiles</strong> (many 65+ reqs) — Neitiznot faceguard chain</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── BEST XP ── -->
+    <div id="s-xp" class="content-section">
+      <h2>⚡ Best XP Rewards by Skill</h2>
+      <p>These quests give the highest XP rewards per skill. Always do these <em>instead</em> of grinding the skill manually when possible.</p>
+      <div class="tbl">
+        <table style="width:100%">
+          <thead><tr><th>Skill</th><th>Quest</th><th>XP Given</th><th>Approx Level After</th><th>Type</th></tr></thead>
+          <tbody>
+            <tr><td class="td-g">Prayer</td><td>The Restless Ghost</td><td>1,125</td><td>→ 9</td><td><span class="badge badge-f2p">F2P</span></td></tr>
+            <tr><td class="td-g">Prayer</td><td>Priest in Peril</td><td>Large</td><td>→ ~30</td><td><span class="badge badge-mem">P2P</span></td></tr>
+            <tr><td class="td-g">Herblore</td><td>Druidic Ritual</td><td>Unlocks skill</td><td>→ 3</td><td><span class="badge badge-mem">P2P</span></td></tr>
+            <tr><td class="td-g">Herblore</td><td>Violet is Blue + Too</td><td>Lamps → Lv 31</td><td>→ 31</td><td><span class="badge badge-f2p">F2P</span></td></tr>
+            <tr><td class="td-g">Smithing</td><td>The Knight's Sword</td><td>12,725</td><td>→ 29</td><td><span class="badge badge-f2p">F2P</span></td></tr>
+            <tr><td class="td-g">Magic</td><td>Rune Mysteries + Memories</td><td>~4,000</td><td>→ 11</td><td><span class="badge badge-f2p">F2P</span></td></tr>
+            <tr><td class="td-g">Farming</td><td>Swept Away + Myths + Death Plateau</td><td>Lamps</td><td>→ 8</td><td><span class="badge badge-f2p">F2P</span></td></tr>
+            <tr><td class="td-g">Summoning</td><td>Wolf Whistle</td><td>276</td><td>→ 4</td><td><span class="badge badge-mem">P2P</span></td></tr>
+            <tr><td class="td-g">Slayer</td><td>Broken Home (x4 runs)</td><td>~45,000</td><td>Varies</td><td><span class="badge badge-mem">P2P</span></td></tr>
+            <tr><td class="td-g">Attack + Str</td><td>Waterfall Quest</td><td>13,750 each</td><td>→ 30 both</td><td><span class="badge badge-mem">P2P</span></td></tr>
+            <tr><td class="td-g">Defence</td><td>The Death of Chivalry</td><td>Large lamp</td><td>→ 10</td><td><span class="badge badge-mem">P2P</span></td></tr>
+            <tr><td class="td-g">Ranged</td><td>Temple of Ikov</td><td>10,500</td><td>Varies</td><td><span class="badge badge-mem">P2P</span></td></tr>
+            <tr><td class="td-g">Any Skill (×)</td><td>The World Wakes</td><td>450,000 in lamps</td><td>Huge jump</td><td><span class="badge badge-mem">P2P</span></td></tr>
+            <tr><td class="td-g">Prayer</td><td>The World Wakes</td><td>250,000</td><td>→ ~80</td><td><span class="badge badge-mem">P2P</span></td></tr>
+            <tr><td class="td-g">Slayer</td><td>The World Wakes</td><td>110,000</td><td>→ ~60</td><td><span class="badge badge-mem">P2P</span></td></tr>
+            <tr><td class="td-g">Cooking</td><td>Recipe for Disaster chain</td><td>Multiple large rewards</td><td>→ 50+</td><td><span class="badge badge-mem">P2P</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="info-box green"><strong>💡 Strategy:</strong> Before grinding any skill manually, always check if there's a quest that gives XP in it. The Knight's Sword alone saves ~3 hours of Smithing. Violet is Blue + Too saves hours of Herblore. The World Wakes is a multi-skill bonanza that should be a major mid-game goal.</div>
+    </div>
+
+  </div><!-- end page-content -->
+</div><!-- end page-shell -->
+
+<script src="js/main.js"></script>
+<script>
+// ─── Quest Data ──────────────────────────────────────────────────
+const QUESTS = [
+  // bracket, id, name, location, startNpc, type, length, reqText, combatReq, qp, reward, tags
+  ["starter",1,"The Blood Pact","Lumbridge","Xenia — Lumbridge Graveyard","f2p","Short","None",0,1,"All combat stats → Lv 2, Lumbridge Catacombs access","f2p none combat area-unlock"],
+  ["starter",2,"The Restless Ghost","Lumbridge","Father Aereck — Lumbridge Church","f2p","Short","None",0,1,"Prayer XP → Lv 9","f2p none"],
+  ["starter",3,"Cook's Assistant","Lumbridge","Cook — Lumbridge Castle kitchen","f2p","Short","None",0,1,"Cooking XP → Lv 4","f2p none"],
+  ["starter",4,"Imp Catcher","Wizard's Tower","Mizgog — top of Wizard's Tower","f2p","Short","None (collect 4 beads from Imps)",0,1,"Magic XP → Lv 9","f2p none"],
+  ["starter",5,"Rune Mysteries","Lumbridge","Duke Horacio — Lumbridge Castle 2nd floor","f2p","Medium","None",0,1,"Runecrafting UNLOCKED, Magic → Lv 10","f2p none skill-unlock"],
+  ["starter",6,"Rune Memories","Lumbridge","Ariane — south of Lumbridge","f2p","Medium","Rune Mysteries",0,1,"Magic → Lv 11, Runecrafting → Lv 6","f2p skill-unlock"],
+  ["starter",7,"Necromancy!","Draynor Manor","Sorin — Draynor Manor entrance","f2p","Short","None",0,1,"Necromancy UNLOCKED, Death Guard T10","f2p none skill-unlock"],
+  ["starter",8,"Soul Searching","Draynor area","Kili — near Draynor Manor","f2p","Short","Necromancy!",0,1,"Necromancy XP bonus, Death Guard upgrade path","f2p"],
+  ["starter",9,"Ernest the Chicken","Draynor Manor","Veronica — Draynor Manor gate","f2p","Medium","None",0,4,"4 Quest Points — highest early QP drop","f2p none"],
+  ["starter",10,"Swept Away","Draynor area","Maggie — near Draynor","f2p","Short","None",0,2,"Farming XP lamp → Lv 6","f2p none"],
+  ["starter",11,"Myths of the White Lands","Varies","Explorer Jack area","f2p","Short","None",0,2,"Farming XP lamp → Lv 5","f2p none"],
+  ["starter",12,"Pirate's Treasure","Port Sarim","Redbeard Frank — Port Sarim docks","f2p","Short","None",0,2,"2 QP, coins reward","f2p none"],
+  ["starter",13,"A Shadow over Ashdale","Ashdale","Gudrun — Lumbridge area","f2p","Medium","None",0,1,"Atk/Str/Def → Lv 5, Constitution → Lv 11, Herblore lamp","f2p none combat"],
+  ["starter",14,"Shield of Arrav","Varrock","Reldo — Varrock Castle library","f2p","Medium","None",0,1,"1 QP, coins reward","f2p none"],
+  ["starter",15,"Duck Quest","Lumbridge","Near Lumbridge Swamp","f2p","Short","None",0,1,"New 2026 quest — various XP","f2p none"],
+  ["starter",16,"Once Upon a Slime","Near Al Kharid","Check quest journal","f2p","Short","None",0,1,"Cooking XP → Lv 16","f2p none"],
+  ["starter",17,"Song from the Depths","Port Sarim area","Remora — near the docks","f2p","Short","None",0,1,"Constitution XP → Lv 14","f2p none"],
+  ["starter",18,"Violet is Blue","Taverley area","Violet — near Taverley","f2p","Short","None",0,1,"Herblore lamps → Lv 16","f2p none"],
+  ["starter",19,"Violet is Blue Too","Taverley area","Violet — same area","f2p","Medium","Violet is Blue",0,1,"Herblore lamps → Lv 31","f2p"],
+
+  ["early",20,"Buyers and Cellars","Lumbridge","Darren Lightfinger — trapdoor N of Lumbridge","f2p","Short","None",0,1,"Thieving UNLOCKED","f2p skill-unlock"],
+  ["early",21,"Demon Slayer","Varrock","Gypsy Aris — Varrock square","f2p","Medium","Some combat",20,3,"3 QP, Defence lamp → Lv 7","f2p combat"],
+  ["early",22,"Wolf Whistle","Taverley","Pikkupstix — Taverley","members","Short","None (Members)",0,1,"Summoning UNLOCKED → Lv 4","members skill-unlock"],
+  ["early",23,"Druidic Ritual","Taverley","Kaqemeex — Druid circle","members","Short","None (Members)",0,4,"Herblore UNLOCKED, 4 QP","members skill-unlock"],
+  ["early",24,"Death Plateau","Burthorpe","Denulth — Burthorpe castle","members","Short","None (Members)",0,1,"Burthorpe fighting area, Farming lamp","members area-unlock"],
+  ["early",25,"Gertrude's Cat","Varrock","Gertrude — west of Varrock","members","Medium","None (Members)",0,1,"Kitten companion, Cooking XP → Lv 19","members"],
+  ["early",26,"Let Them Eat Pie","Taverley","Nails Newton — Taverley","members","Short","None (Members)",0,1,"Cooking → Lv 16, Thieving → Lv 2","members"],
+  ["early",27,"Impressing the Locals","The Ports","Hyu-Ji — The Ports","members","Short","None (Members)",0,1,"The Arc / Wushanko Isles UNLOCKED","members area-unlock"],
+  ["early",28,"Bring Home the Bacon","Taverley","Eli Bacon — south Taverley","members","Short","None (Members)",0,1,"Player-Owned Farm UNLOCKED","members skill-unlock area-unlock"],
+  ["early",29,"What's Mine is Yours","Falador area","Doric — north of Falador","f2p","Short","None",0,1,"Mining + Smithing XP, Doric quest chain start","f2p"],
+  ["early",30,"Once Upon a Time in Gielinor","Varrock area","Check quest journal","f2p","Medium","None",0,4,"4 QP at once — large QP dump","f2p none"],
+  ["early",31,"Dimension of Disaster: Coin of the Realm","Varrock","Gypsy Aris — Varrock square","f2p","Short","None",0,1,"Opens Dimension of Disaster series","f2p"],
+
+  ["mid",32,"The Knight's Sword","Falador","Squire — Falador Castle courtyard","f2p","Medium","10 Mining",0,1,"Smithing XP → Lv 29 (replaces grinding entirely)","f2p combat"],
+  ["mid",33,"Dragon Slayer","Champions' Guild","Guild Master — south of Varrock","f2p","Long","32 Quest Points",50,2,"Rune + Dragon armour unlocked, large Str/Def XP","f2p combat"],
+  ["mid",34,"The Death of Chivalry","Falador","Sir Owen — Falador Castle","members","Long","Combat ~50",50,3,"Def → Lv 10, Str → Lv 7, Prayer → Lv 11, Magic → Lv 12","members combat"],
+  ["mid",35,"Waterfall Quest","Baxtorian Falls","Almera — near Baxtorian Falls","members","Medium","Some combat (bring food)",40,1,"Attack + Strength → Lv 30 EACH — biggest Melee XP jump in game","members combat"],
+  ["mid",36,"Priest in Peril","Varrock","King Roald — Varrock Castle","members","Medium","Some combat",45,1,"Morytania UNLOCKED, large Prayer XP","members area-unlock"],
+  ["mid",37,"The Lost Tribe","Lumbridge","Duke Horacio — Lumbridge Castle","members","Medium","13 Agility, 13 Thieving, 13 Mining",0,1,"Dorgeshuun chain start, Dorgeshuun Crossbow access","members skill-unlock"],
+  ["mid",38,"Troll Stronghold","Burthorpe","Dunstan — Burthorpe","members","Long","Death Plateau, 15 Agility, combat ~50",50,1,"Trolls stronghold access, Neitiznot helmet chain","members combat area-unlock"],
+  ["mid",39,"The Fremennik Trials","Rellekka","Brundt — Rellekka longhall","members","Long","None but varied tasks",30,3,"Rellekka + Fremennik Isles access, 3 QP","members area-unlock"],
+  ["mid",40,"Jungle Potion","Karamja","Trufitus — Karamja jungle","members","Short","None (Members)",0,1,"Herblore XP, unlocks Shilo Village quest","members"],
+  ["mid",41,"Shilo Village","Karamja","Mosol Rei — south Karamja","members","Medium","Jungle Potion, 20 Crafting, 32 Agility",35,2,"Shilo Village access, gem stalls, fishing","members area-unlock"],
+  ["mid",42,"Broken Home","Canifis area","Odd Old Man — east of Varrock","members","Long","Priest in Peril",50,1,"LARGE Slayer XP, repeatable 3 more times","members combat"],
+  ["mid",43,"Dimension of Disaster: Shield of Arrav","Varrock","Gypsy Aris — Varrock","f2p","Medium","DoD: Coin of the Realm, Shield of Arrav",0,1,"Thieving XP, DoD chain continued","f2p"],
+
+  ["late",44,"Desert Treasure","Al Kharid area","Archaeologist — Bedabin Camp","members","Long","53 Thieving, 50 Firemaking, 10 Slayer, 50 Magic, combat ~65",65,3,"Ancient Magicks spellbook UNLOCKED — huge Magic DPS boost","members combat skill-unlock"],
+  ["late",45,"Plague City","East Ardougne","Elena — east Ardougne","members","Medium","None (Members)",0,1,"Elf quest chain START, Ardougne access","members area-unlock"],
+  ["late",46,"Biohazard","East Ardougne","Elena — Ardougne","members","Medium","Plague City",0,3,"3 QP, continues Elf chain","members"],
+  ["late",47,"Underground Pass","West Ardougne","Koftik — cave entrance","members","Long","Biohazard, 25 Agility, combat ~60",60,5,"West Ardougne, 5 QP","members area-unlock combat"],
+  ["late",48,"Regicide","Tirannwn","Idris — Tirannwn","members","Long","Underground Pass, 56 Agility, combat ~60",60,3,"Tirannwn access, dragonfire shield crafting","members area-unlock"],
+  ["late",49,"Haunted Mine","Morytania","Zealot — Mort Myre entrance","members","Long","35 Crafting, Priest in Peril, combat ~60",60,2,"Salve Amulet (best amulet vs undead)","members combat"],
+  ["late",50,"In Aid of the Myreque","Canifis","Vanstrom — Canifis","members","Long","In Search of Myreque, many reqs",55,2,"Barrows access, Barrows teleport","members area-unlock"],
+  ["late",51,"Recruitment Drive","Falador","Sir Tiffy — Falador Park","members","Short","Black Knights' Fortress, various",0,1,"Falador respawn point","members"],
+  ["late",52,"Lunar Diplomacy","Lunar Isle","Lokar — Rellekka docks","members","Long","Fremennik Trials + many 61+ skill reqs",60,2,"Lunar Spellbook — healing and utility spells","members skill-unlock"],
+  ["late",53,"Grim Tales","Taverley area","Sylas — near Taverley","members","Long","71 Woodcutting, 59 Herblore, 52 Farming, 45 Thieving, 41 Magic",0,1,"Multiple 5,000 XP lamp rewards","members combat"],
+  ["late",54,"Nature Spirit","Mort Myre","Drezel — Mort Myre entrance","members","Short","Priest in Peril, 18 Crafting",0,1,"Blessed Silver Sickle, Guthix Prayer unlock","members"],
+  ["late",55,"Fremennik Isles","Neitiznot","Mord Gunnars — Rellekka","members","Long","Fremennik Trials, 20 Construction, 40 Agility",55,1,"Neitiznot Helmet — best free mid-game head armour","members combat"],
+
+  ["end",56,"The World Wakes","Guthix's Cave","Brother Samwell — NE Varrock","members","Long","Many 65+ stat requirements",75,2,"450K XP in lamps, 110K Slayer XP, 250K Prayer XP, Sunshine + Death's Swiftness unlocked","members combat skill-unlock"],
+  ["end",57,"Fate of the Gods","Freneskae","World Gate — near Prifddinas area","members","Long","Many quest reqs including TWW",70,2,"Elder artefacts, Zaros storyline advance","members"],
+  ["end",58,"While Guthix Sleeps","Draynor area","Various","members","Very Long","Many 65+ stat reqs, major quest reqs",75,3,"Turoth/Kurask Slayer unlocks, 3 QP","members combat"],
+  ["end",59,"Song of the Elves","Prifddinas portal","Eluned — Tirannwn","members","Very Long","Many 70+ skill reqs, full Elf chain complete",70,4,"Prifddinas city FULLY UNLOCKED — best skilling hub","members area-unlock"],
+  ["end",60,"Ritual of the Mahjarrat","Various","Check wiki — long quest chain req","members","Very Long","Many 76+ reqs, many quest reqs",75,3,"Major story unlock, T75 prayer access","members"],
+  ["end",61,"Sliske's Endgame","Sliske's stronghold","Invitation from Sliske","members","Long","Many quest completions required",80,0,"Major story conclusion, unique cosmetics","members"],
+  ["end",62,"The First Necromancer Series","City of Um","Kili — City of Um","members","Long","Progressive Necromancy levels",0,2,"Full Necromancy gear chain, Rasial boss unlock","members skill-unlock"],
+  ["end",63,"Vessel of the Harbinger","City of Um","Via First Necromancer chain","members","Very Long","80+ Necromancy, full chain complete",80,1,"Rasial boss, BiS Necromancy gear pathway","members combat"],
+];
+
+// ─── Render Quest Table ─────────────────────────────────────────
+function renderTable(bracket, containerId) {
+  const qs = QUESTS.filter(q => q[0] === bracket);
+  let html = `<div class="tbl"><table style="width:100%">
+    <thead><tr>
+      <th style="width:28px"></th>
+      <th style="width:24px">#</th>
+      <th>Quest</th>
+      <th>Start</th>
+      <th>Reqs</th>
+      <th>Length</th>
+      <th>Key Reward</th>
+      <th style="width:40px">QP</th>
+    </tr></thead><tbody>`;
+
+  qs.forEach((q, i) => {
+    const [bk, id, name, loc, npc, type, len, reqs, cb, qp, reward, tags] = q;
+    const typeB = type === 'f2p'
+      ? '<span class="badge badge-f2p">F2P</span>'
+      : '<span class="badge badge-mem">P2P</span>';
+    const lenB = len.includes('Long')
+      ? `<span class="badge badge-long">${len}</span>`
+      : `<span class="badge badge-short">${len}</span>`;
+    html += `<tr data-cid="${id}" data-filter="${tags}" class="quest-row" style="cursor:pointer;">
+      <td style="width:28px;padding:8px 4px 8px 12px;"><div class="chk"></div></td>
+      <td class="td-sm td-g" style="width:24px;">${id}</td>
+      <td class="quest-name-cell"><strong class="qname">${name}</strong><br><span class="td-sm">${npc}</span></td>
+      <td class="td-sm">${loc}</td>
+      <td class="td-sm">${reqs}${cb > 0 ? `<br>⚔️ ~Lv ${cb}` : ''}</td>
+      <td>${lenB}<br>${typeB}</td>
+      <td class="td-sm" style="color:var(--green);">${reward}</td>
+      <td class="td-g" style="text-align:center;">${qp}</td>
+    </tr>`;
+  });
+
+  html += '</tbody></table></div>';
+  document.getElementById(containerId).innerHTML = html;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  renderTable('starter', 'qtable-starter');
+  renderTable('early',   'qtable-early');
+  renderTable('mid',     'qtable-mid');
+  renderTable('late',    'qtable-late');
+  renderTable('end',     'qtable-end');
+
+  initCheckRows('quest', 63);
+  initFilters('#qfilter', '.quest-row', 'filter');
+});
+</script>
+</body>
+</html>
