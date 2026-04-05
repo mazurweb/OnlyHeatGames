@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx tsc:*)",
+      "Bash(npx next:*)",
+      "Bash(cp -r /c/WebDevelopment/OnlyHeatGames/src/app/skills /c/WebDevelopment/OnlyHeatGames/src/app/guides/rs3/skills)",
+      "Bash(cp -r /c/WebDevelopment/OnlyHeatGames/src/app/completionist /c/WebDevelopment/OnlyHeatGames/src/app/guides/rs3/completionist)"
+    ]
+  }
+}
