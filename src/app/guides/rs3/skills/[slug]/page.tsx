@@ -163,7 +163,7 @@ export default async function SkillPage({ params }: Props) {
       >
         {prev ? (
           <Link
-            href={`/skills/${prev.slug}`}
+            href={`/guides/rs3/skills/${prev.slug}`}
             className="card"
             style={{
               flex: 1,
@@ -199,7 +199,7 @@ export default async function SkillPage({ params }: Props) {
         )}
         {next ? (
           <Link
-            href={`/skills/${next.slug}`}
+            href={`/guides/rs3/skills/${next.slug}`}
             className="card"
             style={{
               flex: 1,

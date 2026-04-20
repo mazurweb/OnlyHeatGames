@@ -59,7 +59,7 @@ export default function SkillsPage() {
               <td className="td-g">{s.priority}</td>
               <td>
                 <Link
-                  href={`/skills/${s.slug}`}
+                  href={`/guides/rs3/skills/${s.slug}`}
                   style={{ textDecoration: "none" }}
                 >
                   {s.emoji} {s.name}
@@ -86,7 +86,7 @@ export default function SkillsPage() {
             <div className="g4" style={{ marginBottom: 24 }}>
               {catSkills.map((s) => (
                 <div key={s.slug} className="skill-card">
-                  <Link href={`/skills/${s.slug}`}>
+                  <Link href={`/guides/rs3/skills/${s.slug}`}>
                     <div className="skill-card-hdr">
                       <span className="skill-em">{s.emoji}</span>
                       <span className="skill-nm">{s.name}</span>
